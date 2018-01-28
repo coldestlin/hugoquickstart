@@ -21,14 +21,14 @@
     
 
     
-      <link href="https://coldestlin.github.io/hugoquickstart/index.xml" rel="alternate" type="application/rss+xml" title="HELLO HUGO COLDESTLIN" />
-      <link href="https://coldestlin.github.io/hugoquickstart/index.xml" rel="feed" type="application/rss+xml" title="HELLO HUGO COLDESTLIN" />
+      <link href="https://coldestlin.github.io/hugoquickstart/posts/index.xml" rel="alternate" type="application/rss+xml" title="HELLO HUGO COLDESTLIN" />
+      <link href="https://coldestlin.github.io/hugoquickstart/posts/index.xml" rel="feed" type="application/rss+xml" title="HELLO HUGO COLDESTLIN" />
     
 
-    <meta property="og:title" content="HELLO HUGO COLDESTLIN" />
+    <meta property="og:title" content="Posts" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://coldestlin.github.io/hugoquickstart/" />
+<meta property="og:url" content="https://coldestlin.github.io/hugoquickstart/posts/" />
 
 
 
@@ -43,10 +43,10 @@
 
 
 
-<meta itemprop="name" content="HELLO HUGO COLDESTLIN">
+<meta itemprop="name" content="Posts">
 <meta itemprop="description" content="">
 
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="HELLO HUGO COLDESTLIN"/>
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Posts"/>
 <meta name="twitter:description" content=""/>
 
   </head>
@@ -81,7 +81,7 @@
 
       <div class="tc-l pv4 pv6-l ph3 ph4-ns">
         <h1 class="f2 f-subheadline-l fw2 white-90 mb0 lh-title">
-          HELLO HUGO COLDESTLIN
+          Posts
         </h1>
         
       </div>
@@ -91,113 +91,73 @@
 
     <main class="pb7" role="main">
       
-  <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
-    
+  <article class="cf pa3 pa4-m pa4-l">
+    <div class="measure-wide-l center f4 lh-copy nested-copy-line-height nested-links nested-img mid-gray">
+      
+    </div>
   </article>
-  
-  
-  
-  
-  
-  
-  
+  <div class="mw8 center">
     
-    
-
-    <div class="pa3 pa4-ns w-100 w-70-ns center">
+    <section class="flex-ns flex-wrap justify-around mt5">
       
-       
-          <h1 class="flex-none">
-            Recent Posts
-          </h1>
-        
-
-      
-
-      <section class="w-100 mw8">
-        
-        
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/hugoquickstart/posts/readme/" class="color-inherit dim link">
-            Intro
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          简单运行 运行 ENV python3 latest python, latest airflow
+        <div class="relative w-100  mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/hugoquickstart/posts/readme/" class="link black dim">
+        Intro
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      简单运行 运行 ENV python3 latest python, latest airflow
 不依赖airflow运行一次性任务 可以用于测试性目的，或者想快速运行的一次性任务。   在tasks中配置部署workflow json格式需要的一些sql 在executor.standard或executor.fast的main语句中引用，实例化process，process.flow() python -m executor.standard/fast 直接运行。  依赖airflow运行任务 可以运行一次性任务，也可以自动识别cron任务，自动判断分隔区和合适的start date   在tasks中配置部署workflow json格式需要的一些sql 使用cli工具把json配置传递到数据库中【目前还比较简略】 等待airflow识别自动运行  airflow的配置  安装最新版的apache-airflow 启动之前环境变量中设置airflow home的位置为blu文件夹的airflow-home即可  airflow的注意点  自动识别周期日期运行间隔的功能实现上，airflow的start date + period 为运行的真正时间区间。 比如weekly的execution date为2017-11-12（周日），那么实际运行区间为[2017-11-12 TO 2017-11-19）  任务更新注意点  任务以dag id识别，如果修改了cron，建议修改dag id。 如果任务是@once一次性类型，若要再次运行要么在airflow上手动点击运行，要么修改dag id。 如果任务以前执行过在airflow中留下记录，修改了不少东西想要重新运行，最好修改dag id。 一句话，不懂的时候记得修改dag id。  real 运行 gunicorn -w 8 -b 0.0.0.0:9527 -k gevent -t 900 manage:app
-        </div>
-          <a href="/hugoquickstart/posts/readme/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
     </div>
   </div>
-</article>
+</div>
 
-          </div>
-        
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
+        </div>
       
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/hugoquickstart/posts/emtchchina/" class="color-inherit dim link">
-            EmTech China
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          EmTech China 新兴科技峰会 了解了平安科技在人工智能方面的应用。平安是一家巨型的保险公司，也是金融公司，数据公司，科技公司。
+        <div class="relative w-100  mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/hugoquickstart/posts/emtchchina/" class="link black dim">
+        EmTech China
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      EmTech China 新兴科技峰会 了解了平安科技在人工智能方面的应用。平安是一家巨型的保险公司，也是金融公司，数据公司，科技公司。
 没有想到，这家巨无霸在方方面面都在默默争夺话语权。但由于不是一家传统的科技公司，在口碑和新颖上总觉得与其他互联网公司存在差异。
 声纹识别应用在电话沟通的人员实体识别中，真是没想到。  其他人都在介绍AI,都在讲AI. 讲真还是有些过度了。 不过我还没有去涉及这个领域。。。
-        </div>
-          <a href="/hugoquickstart/posts/emtchchina/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
     </div>
   </div>
-</article>
+</div>
 
-          </div>
-        
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/hugoquickstart/posts/hellohugo/" class="color-inherit dim link">
-            Hello HUGO
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          尝试一些常见流行的网站模版，练练手
         </div>
-          <a href="/hugoquickstart/posts/hellohugo/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
+      
+        <div class="relative w-100  mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/hugoquickstart/posts/hellohugo/" class="link black dim">
+        Hello HUGO
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      尝试一些常见流行的网站模版，练练手
     </div>
   </div>
-</article>
+</div>
 
-          </div>
-        
-      </section>
-
+        </div>
       
-
-      </div>
+    </section>
   
+
+  </div>
 
     </main>
     <footer class="bg-near-black bottom-0 w-100 pa3" role="contentinfo">

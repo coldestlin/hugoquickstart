@@ -3,12 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://coldestlin.github.io/hugoquickstart/posts/readme/</loc>
+    <lastmod>2018-01-28T13:20:01+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://coldestlin.github.io/hugoquickstart/posts/emtchchina/</loc>
+    <lastmod>2018-01-28T13:15:01+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://coldestlin.github.io/hugoquickstart/posts/hellohugo/</loc>
+    <lastmod>2018-01-28T13:11:01+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://coldestlin.github.io/hugoquickstart/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://coldestlin.github.io/hugoquickstart/</loc>
+    <lastmod>2018-01-28T13:20:01+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coldestlin.github.io/hugoquickstart/posts/</loc>
+    <lastmod>2018-01-28T13:20:01+08:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -2,7 +2,7 @@
 ---
 title: "Intro"
 date: 2018-01-28T13:20:01+08:00
-draft: true
+draft: false
 ---
 
 # 简单运行
